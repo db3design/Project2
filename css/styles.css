@@ -1,0 +1,263 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* These are the styles for all headings and text */
+h1 {
+    font-size: 45px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: -2.5px;
+    line-height: 1;
+    word-spacing: 2.5px;
+    color: #545454;
+    margin: 25px 0;
+    padding: 0;
+
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    line-height: 1;
+    word-spacing: 1px;
+    color: #333333;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    line-height: 1.35;
+    color: #545454;
+}
+
+.primary-text {
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.75;
+    color: #9D9D9D;
+}
+
+.secondary-text {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.5;
+    color: #545454;
+}
+.hide {
+    display: none !important;
+}
+
+/* Default List Styles */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none !important;
+}
+ul li {
+    margin-bottom: 25px;
+}
+ul li a {
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    line-height: 1;
+    color: #9D9D9D;
+    text-decoration: none;
+    transition: all 1s;
+}
+ul li a:hover {
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: none;
+    line-height: 1;
+    color: #545454;
+    text-decoration: none;
+}
+.dontShow {
+    display: none;
+}
+
+
+/* Container Styles */
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Padded content inside container */
+.md-padding {
+    padding: 10%;
+    margin-top: 25px;
+}
+
+.md-padding img {
+    margin-bottom: 15px;
+}
+
+/* Styles for the cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.card img {
+    max-width: 80%;
+    margin-top: 50px;
+}
+.card h2 {
+    max-width: 75%;
+    margin-bottom: 15px;
+}
+.card p {
+    max-width: 90%;
+    margin-top: 0;
+}
+.footerNav {
+    padding: 2.5%;
+    max-width: 85%;
+    clear: right;
+    display: inline-flex;
+}
+.footerNav h1 {
+    float: left;
+    font-size: 25px;
+}
+.footerNav a {
+    color: #333333;
+    text-decoration: none;
+    float: right;
+}
+#nav2 p a {
+    position: absolute;
+    right: 5%;
+}
+
+/* Styles For Tablet */
+@media only screen and ( min-width: 768px ) {
+    #nav {
+        margin-top: 25px;   
+    }
+    ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+    #hero {
+        padding: 2.5% 5%;
+        margin-top: 65px;
+        margin-bottom: 125px;
+    }
+    #hero img {
+        width: 37.5%;
+        float: right;
+        margin-top: 37.5px;
+    }
+    #hero p {
+        width: 65%;
+        text-align: left;
+        font-size: 27.5px;
+        letter-spacing: .5px;
+        line-height: 1.5;
+        color: #545454;
+        font-weight: 600;
+    } 
+    .card {
+        width: 42.5% !important;
+        display: inline-flex;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact h3 {
+        margin-bottom: 50px;
+    }
+    #contact .primary-text {
+        width: 65%;
+        font-size: 27.5px;
+        letter-spacing: .5px;
+        line-height: 1.5;
+        color: #545454;
+        font-weight: 600;
+        text-align: center;
+    } 
+    .dontShow {
+        display: initial;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        float: left;
+    }
+    .dontShow li a {
+        margin-right: 20px !important;
+    }
+    .no {
+        display: none !important;
+    }
+    #nav2 ul {
+        position: absolute;
+        right: 5%;
+        margin-top: 25px;
+    }
+  }
+
+  @media only screen and ( min-width: 1024px) {
+    .card {
+        width: 30% !important;
+        display: inline-flex;
+    }
+    #nav {
+        display: inline-block;
+        clear: both;
+        padding: 5px 5%;
+        max-width: 90%;
+    }
+    #nav h1 {
+        float: left;
+    }
+    #nav ul {
+        float: right;
+        margin-top: 15px;
+    }
+    #hero {
+        margin-bottom: 175px;
+        margin-top: 100px;
+    }
+    #hero p {
+        width: 60%;
+        text-align: left;
+        font-size: 30px;
+        letter-spacing: .5px;
+        line-height: 1.5;
+        color: #545454;
+        font-weight: 600;
+    }
+    #hero img {
+        margin-top: 15px;
+        width: 40%;
+        margin-right: 0;
+    }
+    #nav2 ul {
+        position: absolute;
+        right: 5%;
+        margin-top: 25px;
+    }
+  } 
