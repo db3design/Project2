@@ -2,6 +2,10 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+    background-color: rgb(229, 223, 235) !important;
+}
+
 /* These are the styles for all headings and text */
 h1 {
     font-size: 45px;
@@ -118,7 +122,7 @@ ul li a:hover {
     margin-bottom: 25px;
 }
 .card img {
-    max-width: 80%;
+    max-width: 90%;
     margin-top: 50px;
 }
 .card h2 {
@@ -148,6 +152,7 @@ ul li a:hover {
     position: absolute;
     right: 5%;
 }
+
 
 /* Styles For Tablet */
 @media only screen and ( min-width: 768px ) {
